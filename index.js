@@ -1,4 +1,4 @@
-let http = require("http");
+const http = require("http");
 const calc = require("./sub");
 
 const PORT = 8080;
@@ -14,4 +14,4 @@ http.createServer((req, res) => {
     res.end();
 }).listen(PORT); // Listening on port 8080.
 
-console.log(`Server running at http://localhost:8080`);
+console.log(`Server running at http://localhost:${PORT}`);
